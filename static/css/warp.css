@@ -2,15 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    width: 50%;
-    margin: 0 auto; 
+
 }
 
 .video-wrapper {
     width: calc(25% - 10px); 
-    position: relative;
+    
 }
 
-.video-wrapper video {
-    width: 50%;
-}
