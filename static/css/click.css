@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.containerout {
+.container {
     display: flex;
     justify-content: space-between;
     width: 100%;
