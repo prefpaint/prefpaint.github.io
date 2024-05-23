@@ -1,22 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const carousels = document.querySelectorAll('.carousel');
-    
-    function currentSlide(n, carouselIndex) {
-      const carousel = carousels[carouselIndex];
-      const images = carousel.querySelectorAll('img');
-      const dots = carousel.querySelectorAll('.dots span');
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.carousel img');
+    const dots = document.querySelectorAll('.dots span');
   
-      images.forEach((img, index) => {
-        img.classList.remove('active');
-        dots[index].classList.remove('active');
-      });
-  
-      images[n - 1].classList.add('active');
-      dots[n - 1].classList.add('active');
+    function showSlide(index) {
+      slides[currentIndex].classList.remove('active');
+      dots[currentIndex].classList.remove('active');
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+      currentIndex = index;
     }
   
-    // Initialize the first slide as active
-    carousels.forEach((carousel, index) => {
-      currentSlide(1, index);
-    });
+    window.currentSlide = function(index) {
+      showSlide(index - 1);
+    };
   });
