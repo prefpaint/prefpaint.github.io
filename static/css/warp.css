@@ -8,6 +8,6 @@
 
 .video-wrapper {
     width: calc(25% - 10px); 
-    position: relative;
+    position: absolute;
 }
 
