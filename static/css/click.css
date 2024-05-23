@@ -1,12 +1,8 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-.containerdots {
+.container {
     display: flex;
     justify-content: space-between;
     width: 80%;
