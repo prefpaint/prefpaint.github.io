@@ -1,4 +1,4 @@
-function currentSlide(sliderIndex, slideIndex) {
+function currentSlidelong(sliderIndex, slideIndex) {
     const sliderlong = document.getElementById(`sliderlong${sliderIndex}`);
     const slideslong = sliderlong.getElementsByClassName('slidelong');
     const dotslong = sliderlong.getElementsByClassName('dotlong');
