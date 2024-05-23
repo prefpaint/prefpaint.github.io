@@ -1,12 +1,18 @@
-.video-container {
+body {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-
+    width: 70%;
 }
-
-.video-wrapper {
-    width: calc(25% - 10px); 
-    
+video {
+    width: 100%;
+    height: auto;
+    display: block;
 }
-
