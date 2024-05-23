@@ -47,7 +47,7 @@ body {
 
 .dotslong {
     text-align: center;
-    position: relative;
+    position: absolute;
     bottom: 10px;
     width: 100%;
 }
@@ -63,5 +63,9 @@ body {
 }
 
 .dot.active {
+    background-color: #717171;
+}
+
+.dotlong.active {
     background-color: #717171;
 }
