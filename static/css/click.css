@@ -1,12 +1,21 @@
-.carousel {
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .carousel {
     position: relative;
-    max-width: 500px;
-    margin: auto;
+    width: 250px;
   }
   
   .carousel img {
-    width: 100%;
     display: none;
+    width: 100%;
   }
   
   .carousel img.active {
@@ -15,17 +24,19 @@
   
   .dots {
     text-align: center;
-    margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
   }
   
   .dots span {
+    cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 5px;
+    margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    cursor: pointer;
   }
   
   .dots span.active {
