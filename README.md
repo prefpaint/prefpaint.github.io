@@ -1,1 +1,1 @@
-# prefpaint.github.io
+# Project page code for PrefPaint
