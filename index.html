@@ -42,6 +42,134 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <style>
+        /* Gradient text style */
+        .gradient-text {
+            background-image: linear-gradient(to right, #b59f00, green, blue);
+            /* Darker yellow */
+            -webkit-background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            /* Make the text bold */
+        }
+
+        .title.is-1.publication-title {
+            font-size: 48px;
+            font-weight: bold;
+            background-image: linear-gradient(to right, #b59f00, green, blue);
+            /* Darker yellow */
+            -webkit-background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-clip: text;
+        }
+
+        .title.is-3.publication-title {
+            font-size: 36px;
+            font-weight: bold;
+            background-image: linear-gradient(to right, #b59f00, green, blue);
+            /* Darker yellow */
+            -webkit-background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-clip: text;
+        }
+
+
+        .center-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            /* Optional: centers the section vertically on the page */
+            margin: 20px 0;
+        }
+
+        #canvas-container {
+            width: 512px;
+            max-width: 512px;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        canvas {
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+        }
+
+        #img-controls {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            /* Allow buttons to wrap on small screens */
+        }
+
+        .scriptButton {
+            cursor: pointer;
+            width: 164px;
+            height: auto;
+            margin: 10px;
+        }
+
+        #reloadButton {
+            padding: 10px 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            #canvas-container {
+                max-width: 90vw;
+                /* Use 90% of the viewport width on small screens */
+                height: auto;
+                /* Let height adjust to maintain aspect ratio */
+            }
+
+            canvas {
+                width: 100%;
+                height: auto;
+                /* Ensure the aspect ratio is maintained */
+            }
+
+            .center-section h2 {
+                font-size: 24px;
+                /* Scale down heading font sizes for mobile */
+            }
+
+            #img-controls {
+                flex-direction: row;
+                /* Stack the controls vertically on smaller screens */
+                gap: 15px;
+            }
+
+            .scriptButton {
+                width: 100px;
+                /* Reduce button size on smaller screens */
+                height: auto;
+            }
+
+            button {
+                font-size: 14px;
+                /* Scale down the font size for buttons */
+            }
+        }
+    </style>
 
 </head>
 
